@@ -1,0 +1,50 @@
+" it seems i need this so pentadactyl stops hanging
+
+" let me use some shortcuts ffs
+set passkeys+=www.google.com/reader:jkS<CR>
+set passkeys+=www.theoldreader.com:jks|<CR>
+
+" disable some dumb defaults
+nmap d <Nop>
+nmap a <Nop>
+nmap w <Nop>
+
+" Disable some regular-Firefox old habits
+nmap <M-F12> <Nop>
+nmap <M-t> <Nop>
+nmap <M-e> <Nop>
+nmap <M-b> <Nop>
+nmap <M-S-h> <Nop>
+nmap <M-k> <Nop>
+nmap <M-f> <Nop>
+nmap <M-g> <Nop>
+nmap <M-l> <Nop>
+
+" some maps that are cool
+nmap <Leader>u :emenu Tools.Web Developer.Page Source<CR>
+nmap <Leader>w :emenu Tools.Web Developer.Web Console<cr>
+nmap <Leader>d :tabclose<cr>
+nmap <Leader>e :open 
+nmap <Leader>c ;c
+
+" now we can change tabs the nice way
+nmap <Leader>1 :b 1<CR>
+nmap <Leader>2 :b 2<CR>
+nmap <Leader>3 :b 3<CR>
+nmap <Leader>4 :b 4<CR>
+nmap <Leader>5 :b 5<CR>
+nmap <Leader>6 :b 6<CR>
+nmap <Leader>7 :b 7<CR>
+nmap <Leader>8 :b 8<CR>
+nmap <Leader>9 :b 9<CR>
+nmap <Leader>0 :tablast<CR>
+
+" easier to open url
+nmap <Leader>g ivy<esc><esc>\P<cr>
+
+" easier to copy things. just select with the mouse and voila.
+nmap <Leader>Y ivy<esc><esc><cr>
+
+map -ex <leader>c :open couch
+
+" vim: ft=pentadactyl:
